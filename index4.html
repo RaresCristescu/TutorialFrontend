@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style4.css"/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+   
+
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    
+<!-- <h2>Float Right</h2>
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+<p><img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p> -->
+
+
+<!-- <h2>Float Next To Each Other</h2>
+<p>In this example, the three divs will float next to each other.</p>
+<div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<div class="div3">Div 3</div> -->
+
+<!-- <h2>Without clear</h2>
+<div class="div1">div1</div>
+<div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+<br><br>
+
+<h2>With clear</h2>
+<div class="div3">div3</div>
+<div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div> -->
+
+
+<!-- <h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<h2 style="clear:right">With Clearfix</h2>
+<p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+<div class="clearfix">
+  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div> -->
+
+<!-- <h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. 
+We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p> -->
+
+<!-- <h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="img_5terre.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p> -->
+
+
+
+<!-- <h2>Equal Height Boxes</h2>
+<p>Floating boxes with equal heights:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <h2>Box 1</h2>
+  <p>Some content, some content, some content</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <h2>Box 2</h2>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  </div>
+</div>
+
+<p>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the same amount of content in them, but that's not always the case. If you try the example above on a mobile phone (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
+<p>Go back to the tutorial and find another solution, if this is not what you want.</p> -->
+
+<!-- <h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div class="box">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+  <div class="box">Box 2 - My height will follow Box 1.</div>
+</div>
+
+<p>Try to resize the browser window to see the flexible layout.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p> -->
+
+
+<!-- <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+   -->
+
+
+  <!-- <div class="header">
+    <h1>Chania</h1>
+  </div>
+  
+  <div class="clearfix">
+    <div class="column menu">
+      <ul>
+        <li>The Flight</li>
+        <li>The City</li>
+        <li>The Island</li>
+        <li>The Food</li>
+      </ul>
+    </div>
+  
+    <div class="column content">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+      <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Footer Text</p>
+  </div> -->
+  
+  <!-- <h1>The display Property</h1>
+
+  <h2>display: inline</h2>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+  
+  <h2>display: inline-block</h2>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+  
+  <h2>display: block</h2>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+   -->
+
+   <!-- <h1>Horizontal Navigation Links</h1>
+   <p>By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+   <p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+   
+   <ul class="nav">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#about">About Us</a></li>
+     <li><a href="#clients">Our Clients</a></li>  
+     <li><a href="#contact">Contact Us</a></li>
+   </ul> -->
+
+   
+<!-- <h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+<div class="center">
+  <p>Hello World!</p>
+</div> -->
+
+<!-- <h2>Center Text</h2>
+<div class="center">
+  <p>This text is centered.</p>
+</div> -->
+
+<!-- <h2>Center an Image</h2>
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+<img src="paris.jpg" alt="Paris" style="width:40%"> -->
+
+<!-- <h2>Right align with the position property</h2>
+<p>An example of how to right align elements with the position property:</p>
+<div class="right">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div> -->
+
+<!-- <h2>Right align with the float property</h2>
+
+<p>An example of how to right align elements with the float property:</p>
+
+<div class="right">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p> -->
+
+
+<!-- <h2>Without Clearfix</h2>
+
+  <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+  
+  <div>
+    <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+  
+  <h2 style="clear:right">With New Modern Clearfix</h2>
+  <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+  
+  <div class="clearfix">
+    <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div> -->
+
+<!-- <h2>Center vertically with padding</h2>
+
+<p>In this example, we use the padding property to center the div element vertically:</p>
+
+<div class="center">
+  <p>I am vertically centered.</p>
+</div> -->
+
+<!-- <h2>Center with padding and text-align</h2>
+
+<p>In this example, we use padding and text-align to center the div element both vertically and horizontally:</p>
+
+<div class="center">
+  <p>I am vertically and horizontally centered.</p>
+</div> -->
+
+<!-- <h2>Center with line-height</h2>
+
+<p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+<div class="center">
+  <p>I am vertically and horizontally centered.</p>
+</div> -->
+
+<!-- <h2>Center with position and transform</h2>
+
+<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+<div class="center">
+  <p>I am vertically and horizontally centered.</p>
+</div> -->
+
+<!-- <h2>Flexbox Centering</h2>
+
+<p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+
+<div class="center">
+  <p>I am vertically and horizontally centered.</p>
+</div> -->
+
+<!-- <h2>Descendant Selector</h2>
+
+<p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p> -->
+
+<!-- <h2>Child Selector</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <p>Paragraph 3 in the div (inside a section element).</p>
+</section>
+<p>Paragraph 4 in the div.</p>
+</div> -->
+
+<!-- <h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p> -->
+
+<!-- <h2>General Sibling Selector</h2>
+
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p> -->
+
+<!-- <h2>Styling a link depending on state</h2>
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p> -->
+
+
+<!-- <h2>Pseudo-classes and HTML Classes</h2>
+
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+<p><a href="default.asp">CSS Tutorial</a></p> -->
+
+<!-- <p>Mouse over the div element below to change its background color:</p>
+
+<div>Mouse Over Me</div> -->
+
+
+<!-- 
+<div>Hover over this div element to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+ -->
+
+ <!-- <p>This is some text.</p>
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div> -->
+
+<!-- <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p> -->
+
+<!-- <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<div>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div> -->
+
+<!-- <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+ -->
+
+<!-- <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p> -->
+
+<!-- <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+ -->
+
+<!-- <p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p> -->
+
+<!-- <p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p> -->
+
+<!-- <h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1> -->
+
+<!-- <h1>This is a heading</h1>
+<p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+<h1>This is a heading</h1> -->
+
+<!-- <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol> -->
+
+
+<!-- <h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div> -->
+
+
+<!-- <h1>Image Transparency</h1>
+<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+<p>Image with 50% opacity:</p>
+<img src="v.jpeg" alt="Forest" width="170" height="100"> -->
+
+<!-- <h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+<img src="v.jpeg" alt="Forest" width="170" height="100">
+<img src="v.jpeg" alt="Mountains" width="170" height="100">
+<img src="v.jpeg" alt="Italy" width="170" height="100"> -->
+
+<!-- <h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+<img src="v.jpeg" alt="Forest" width="170" height="100">
+<img src="v.jpeg" alt="Mountains" width="170" height="100">
+<img src="v.jpeg" alt="Italy" width="170" height="100"> -->
+
+<!-- <h1>Transparent Box</h1>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first"><p>opacity 0.1</p></div>
+<div class="second"><p>opacity 0.3</p></div>
+<div class="third"><p>opacity 0.6</p></div>
+<div><p>opacity 1 (default)</p></div> -->
+
+<!-- <h1>Transparent Box</h1>
+<p>With opacity:</p>
+<div style="opacity:0.1;"><p>10% opacity</p></div>
+<div style="opacity:0.3;"><p>30% opacity</p></div>
+<div style="opacity:0.6;"><p>60% opacity</p></div>
+<div><p>opacity 1</p></div>
+
+<p>With RGBA color values:</p>
+<div class="first"><p>10% opacity</p></div>
+<div class="second"><p>30% opacity</p></div>
+<div class="third"><p>60% opacity</p></div>
+<div><p>default</p></div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+ -->
+
+ <!-- <div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div> -->
+<!-- 
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  
+  <p>Note: We use href="#" for test links. In a real web site this would be URLs.</p> -->
+
+  <!-- <p>In this example, we remove the bullets from the list, and its default padding and margin.</p>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul> -->
+
+<!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>A background color is added to the links to show the link area.</p>
+<p>Notice that the whole link area is clickable, not just the text.</p> -->
+
+<!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>A background color is added to the links to show the link area.</p>
+<p>Notice that the whole link area is clickable, not just the text.</p> -->
+
+<!-- <h2>Vertical Navigation Bar</h2>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <h2>Vertical Navigation Bar</h2>
+<p>In this example, we create an "active" class with a green background color and a white text. The class is added to the "Home" link.</p>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <h2>Vertical Navigation Bar</h2>
+<p>In this example, we center the navigation links and add a border to the navigation bar.</p>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div> -->
+
+
+
+<!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+<p>A background color is added to the links to show the link area. The whole link area is clickable, not just the text.</p>
+<p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p> -->
+
+<!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>A background color is added to the list instead of each link to create a full-width background color.</p>
+<p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+  <h1>Fixed Top Navigation Bar</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+</div> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:20px;background-color:#1abc9c;height:1500px;">
+  <h1>Fixed Bottom Navigation Bar</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the bottom of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+</div> -->
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul> -->
+
+<!-- <div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<h3>Sticky Navigation Bar Example</h3>
+<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
+<p><strong>Note:</strong> Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> -->
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+
+
+</body>
