@@ -1021,6 +1021,10 @@ li.dropdown {
   display: inline-block;
 }
 
+.diana {
+  color: rgb(216, 81, 126);
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
